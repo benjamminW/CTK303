@@ -5,6 +5,8 @@ body{
     background-color: #33f9ff;
 }
 
+/* SUN */
+
 #sun {
     position: fixed; 
     top: 0;
@@ -12,20 +14,28 @@ body{
     transform: scale(1);
     width: 300px;  
     height: 300px; 
+    animation: sun-ani 2.0s linear;
 }
 
 #sun img {
     display: block; 
-    margin: 0;
-    padding: 0;
+    margin-left: 50px;
+    margin-top: 50px;
     width: 100%; 
     height: 100%; 
     transition: .5s all;
 }
 
+@keyframes sun-ani {
+    0% {top: -250px;}
+    100% {top: 0px;}
+}
+
 #sun img:hover{
     filter: blur(10px);
 }
+
+/* Balloon 1 */
 
 
 #slide1 {
@@ -50,7 +60,7 @@ body{
     100% {bottom: 100px; filter: hue-rotate(360deg);}
 }
 
-
+/* Balloon 2 */
 
 #slide2 {
     position: absolute;
@@ -74,7 +84,7 @@ body{
     100% {bottom: 10px;}
 }
 
-
+/* Balloon 3 */
 
 #slide3 {
     position: absolute;
@@ -97,6 +107,8 @@ body{
     100% {bottom: 10px; filter: hue-rotate(360deg);}
 }
 
+/* Balloon 4 */
+
 #slide4{
     position: absolute;
     bottom: -1000px;
@@ -117,6 +129,8 @@ body{
     0% {bottom: -1000px;}
     100% {bottom: 10px;}
 }
+
+/* Balloon 5 */
 
 #slide5{
     position: absolute;
