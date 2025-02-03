@@ -1,0 +1,75 @@
+body{
+    background-color: lightblue;
+}
+
+
+#SVGART{
+    display: block;
+    margin: auto;
+    position: absolute;
+}
+
+
+#SKY{
+    animation: skyani 1.0s;
+}
+
+@keyframes skyani {
+    0%   { transform: translate(0, -500px);}
+    100% { transform: translate(0, 0);}
+}
+
+#SUN{
+    animation: sunani 1.5s;
+    transform-origin: top left;
+    transition: 0.5s ease;
+
+}
+
+#SUN:hover{
+    filter: blur(10px);
+}
+
+@keyframes sunani {
+    0% {transform: scale(0); opacity: 0;}
+    100% {transform: scale(1);opacity: 1;}
+}
+
+
+#WATER1 {
+    animation: waterani1 1.0s;
+  }
+  
+  @keyframes waterani1 {
+    0%   { transform: translate(0, -500px);}
+    100% { transform: translate(0, 0);}
+  }
+
+
+  #WATER2 {
+    animation: waterani2 1.0s;
+  }
+  
+  @keyframes waterani2 {
+    0%   { transform: translate(500px, 0px);}
+    100% { transform: translate(0, 0);}
+  }
+
+  #WATER3 {
+    animation: waterani3 1.0s;
+  }
+  
+  @keyframes waterani3 {
+    0%   { transform: translate(0, 500px);}
+    100% { transform: translate(0, 0);}
+  }
+
+  #WATER4 {
+    animation: waterani4 1.0s;
+  }
+  
+  @keyframes waterani4 {
+    0%   { transform: translate(-500px, 0px);}
+    100% { transform: translate(0, 0);}
+  }
+
