@@ -37,7 +37,9 @@ body{
 
 
 #WATER1 {
+    transform-origin: center;
     animation: waterani1 1.0s;
+    animation: waterrotate1 1.0s infinite;
   }
   
   @keyframes waterani1 {
@@ -45,9 +47,21 @@ body{
     100% { transform: translate(0, 0);}
   }
 
+  @keyframes waterrotate1 {
+    0%   { transform: rotate(0deg);}
+    25%   { transform: rotate(5deg);}
+    50%   { transform: rotate(0deg);}
+    75%   { transform: rotate(5deg);}
+    100%   { transform: rotate(0deg);}
+    
+  }
+
+
 
   #WATER2 {
-    animation: waterani2 1.0s;
+    transform-origin: center;
+    animation: waterani2 1.25s;
+    animation: waterrotate2 1.0s infinite;
   }
   
   @keyframes waterani2 {
@@ -55,8 +69,18 @@ body{
     100% { transform: translate(0, 0);}
   }
 
+  @keyframes waterrotate2 {
+    0%   { transform: rotate(0deg);}
+    25%   { transform: rotate(-2.5deg);}
+    50%   { transform: rotate(0deg);}
+    75%   { transform: rotate(-2.5deg);}
+    100%  { transform: rotate(0deg);}
+  }
+
   #WATER3 {
-    animation: waterani3 1.0s;
+    transform-origin: center;
+    animation: waterani3 1.5s;
+    animation: waterrotate3 1.0s infinite;
   }
   
   @keyframes waterani3 {
@@ -64,12 +88,33 @@ body{
     100% { transform: translate(0, 0);}
   }
 
+  @keyframes waterrotate3 {
+    0%   { transform: rotate(0deg);}
+    25%   { transform: rotate(-5deg);}
+    50%   { transform: rotate(0deg);}
+    75%   { transform: rotate(-5deg);}
+    100%   { transform: rotate(0deg);}
+    
+  }
+
+  
+
   #WATER4 {
-    animation: waterani4 1.0s;
+    transform-origin: center;
+    animation: waterani4 1.75s;
+    animation: waterrotate4 1.0s infinite;
   }
   
   @keyframes waterani4 {
     0%   { transform: translate(-500px, 0px);}
     100% { transform: translate(0, 0);}
+  }
+
+  @keyframes waterrotate4 {
+    0%   { transform: rotate(0deg);}
+    25%   { transform: rotate(2.5deg);}
+    50%   { transform: rotate(0deg);}
+    75%   { transform: rotate(2.5deg);}
+    100%  { transform: rotate(0deg);}
   }
 
