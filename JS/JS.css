@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+    background-color: grey;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Allows clicking on elements beneath */
+}
+
+
+#SVGART{
+    display: block;
+    margin: auto;
+    position: absolute;
+}
+
+
+#SKY{
+    animation: skyani 1.0s;
+}
+
+@keyframes skyani {
+    0%   { transform: translate(0, -500px);}
+    100% { transform: translate(0, 0);}
+}
+
+#SUN{
+    animation: sunani 1.5s;
+    transform-origin: top left;
+    transition: 0.5s ease;
+
+}
+
+#SUN:hover{
+    filter: blur(10px);
+}
+
+@keyframes sunani {
+    0% {transform: scale(0); opacity: 0;}
+    100% {transform: scale(1);opacity: 1;}
+}
+
+
+#WATER1 {
+    transform-origin: center;
+    animation: waterani1 1.0s;
+    animation: waterrotate1 1.0s infinite;
+  }
+  
+  @keyframes waterani1 {
+    0%   { transform: translate(0, -500px);}
+    100% { transform: translate(0, 0);}
+  }
+
+  @keyframes waterrotate1 {
+    0%   { transform: rotate(0deg);}
+    25%   { transform: rotate(5deg);}
+    50%   { transform: rotate(0deg);}
+    75%   { transform: rotate(5deg);}
+    100%   { transform: rotate(0deg);}
+    
+  }
+
+
+
+  #WATER2 {
+    transform-origin: center;
+    animation: waterani2 1.25s;
+    animation: waterrotate2 1.0s infinite;
+  }
+  
+  @keyframes waterani2 {
+    0%   { transform: translate(500px, 0px);}
+    100% { transform: translate(0, 0);}
+  }
+
+  @keyframes waterrotate2 {
+    0%   { transform: rotate(0deg);}
+    25%   { transform: rotate(-2.5deg);}
+    50%   { transform: rotate(0deg);}
+    75%   { transform: rotate(-2.5deg);}
+    100%  { transform: rotate(0deg);}
+  }
+
+  #WATER3 {
+    transform-origin: center;
+    animation: waterani3 1.5s;
+    animation: waterrotate3 1.0s infinite;
+  }
+  
+  @keyframes waterani3 {
+    0%   { transform: translate(0, 500px);}
+    100% { transform: translate(0, 0);}
+  }
+
+  @keyframes waterrotate3 {
+    0%   { transform: rotate(0deg);}
+    25%   { transform: rotate(-5deg);}
+    50%   { transform: rotate(0deg);}
+    75%   { transform: rotate(-5deg);}
+    100%   { transform: rotate(0deg);}
+    
+  }
+
+  
+
+  #WATER4 {
+    transform-origin: center;
+    animation: waterani4 1.75s;
+    animation: waterrotate4 1.0s infinite;
+  }
+  
+  @keyframes waterani4 {
+    0%   { transform: translate(-500px, 0px);}
+    100% { transform: translate(0, 0);}
+  }
+
+  @keyframes waterrotate4 {
+    0%   { transform: rotate(0deg);}
+    25%   { transform: rotate(2.5deg);}
+    50%   { transform: rotate(0deg);}
+    75%   { transform: rotate(2.5deg);}
+    100%  { transform: rotate(0deg);}
+  }
+ 
