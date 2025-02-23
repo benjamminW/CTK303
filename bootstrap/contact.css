@@ -1,0 +1,219 @@
+body {
+    background-image: url(slanted-gradient.svg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
+    align-content: center;
+    margin: 0px;
+  
+  }
+  
+  #wrapper {
+    margin: 24px auto;
+    /* width: 1200px; */
+    /* background-color: #010030; */
+  }
+  
+  /* style for dummy columns, delete and replace with your own CSS */
+  .dummycolumn {
+    background-color: rgba(255,0,0,.25);
+    grid-column: span 1;
+  }
+  
+  header{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    height: 100px;
+    grid-column: span 12;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex; /* Use flexbox for consistent alignment */
+    justify-content: space-between;
+    align-items: center; /* Align nav and h1 vertically */
+    height: 100px; /* Ensure consistent height */
+  
+  }
+  
+  header h1{
+    grid-column: span 1;
+    color: #CECCA8;
+    margin-left: 50px;
+    padding-top: 10px;
+    font-weight: normal;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px; 
+  }
+  
+  
+  
+  header h1, nav {
+    margin: 0; /* Ensure no extra space from margins */
+    padding: 0;
+  }
+  
+  
+  
+  
+  
+  
+  nav{
+    grid-column: span 1;
+    display: grid;
+  }
+  
+  nav ul {
+    list-style-type: none; /* none, disc, circle, square */
+    margin-top: 4%;
+  }
+  
+  nav li {
+    display: inline-block;
+    width: auto;
+    margin: 5px;
+    color: #CECCA8;
+  }
+  nav li a {
+    color: #CECCA8;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    transition: all .5s;
+    
+  }
+  
+  nav li a:hover{
+    transform: scale(1.1);
+    color: white;
+  
+  }
+
+
+  footer{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    /* background-color: #010030; */
+    display: grid;
+    text-align: right;
+    padding-right: 20px;
+  }
+  
+  footer img{
+    padding: 10px;
+    width: 35%;
+  }
+  
+  footer ul{
+    list-style-type: none; /* none, disc, circle, square */
+    grid-column: span 1;
+    margin: 0px;
+  }
+  
+  footer li{
+    display: inline-block;
+    margin: 0px;
+  }
+  
+  footer a{
+    color: #010030;
+  }
+  
+  .youtube {
+    padding-bottom: 13px;
+  }
+  
+  footer a:visited{
+    color: #010030;
+  }
+  
+  footer a:hover{
+    color: #010030;
+  }
+  
+  header a{ 
+    text-decoration: none;
+    color: #CECCA8;
+  }
+  
+  header a:visited{ 
+    text-decoration: none;
+    color: #CECCA8;
+  }
+  
+  header a:hover{ 
+    text-decoration: none;
+    color: #CECCA8;
+  }
+
+
+  main h1{
+    color: #CECCA8;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    grid-column: span 3;
+    margin: 10px;
+  }
+
+  .bi {
+    color: #CECCA8;
+    font-size: 22px; /* Adjust as needed */
+    display: inline-block;
+    padding: 5px;
+    opacity: 90%;
+    transition: all ease .3s;
+  }
+
+  .bi:hover {
+    transform: scale(1.1);
+    }
+
+main{
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    display: grid;
+    width: 1200px
+}
+
+section{
+    grid-column: span 1;
+    align-content: center;
+    margin-top: 24px;
+    margin-left: 24px;
+  }
+  
+  .aside{
+    grid-column: span 1;
+    margin-top: 175px;
+    margin-right: 24px;
+    max-width: fit-content;
+    
+  }
+  
+  .aside p{
+    color: #CECCA8;
+    width: auto;
+    font-size: 25px;
+    padding-left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  /* Ensure the navbar behaves normally and is sticky */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* Keeps the navbar above other content */
+}
+
+/* Custom position for the hamburger button */
+.navbar-toggler {
+  position: absolute;
+  right: 10px; /* Adjust this if needed */
+  top: 10px;   /* Adjust this if needed */
+  z-index: 1050; /* Ensures the button is above other content */
+}
